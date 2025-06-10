@@ -6,6 +6,7 @@ final pubClient = PubClient();
 class OrynVersion {
   String? _version;
   String? _cliVersion;
+  String? _testVersion;
 
   get version async {
     if (_version == null) {
@@ -20,5 +21,12 @@ class OrynVersion {
       _cliVersion = res.version;
     }
     return _cliVersion;
+  }
+  get testVersion async {
+    if (_testVersion == null) {
+      final res = await pubClient.packageInfo('test');
+      _testVersion = res.version;
+    }
+    return _testVersion;
   }
 }

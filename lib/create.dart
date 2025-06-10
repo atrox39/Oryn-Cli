@@ -7,6 +7,7 @@ import 'version.dart';
 
 FutureOr create(List<String> args) async {
   String version = await OrynVersion().version;
+  String testVersion = await OrynVersion().testVersion;
   String separator = Platform.isWindows ? '\\' : '/';
   String project = args[1];
 
@@ -40,6 +41,8 @@ environment:
 
 dependencies:
   oryn: ^$version
+  test: ^$testVersion
+
 
 dev_dependencies:
   lints: ^1.0.0''');
