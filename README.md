@@ -1,39 +1,39 @@
-# Lucy 
+# Oryn Cli 
 
-Simple Command Line Interface (CLI) for [Lucifer](https://pub.dev/packages/lucifer) framework.
+Simple Command Line Interface (CLI) for [Oryn](https://pub.dev/packages/oryn) framework.
 
 ## Installation
 
-You may activate Lucy CLI by using the following command in your terminal:
+You may activate Oryn CLI by using the following command in your terminal:
 
 ```bash
-pub global activate lucy
+pub global activate oryn_cli
 ```
 
 ## Usage 
 
 ### Create New Project
 
-To create a new Lucifer project, you may use the following Lucy command.
+To create a new Oryn project, you may use the following Oryn command.
 
 ```bash
-l create <project>
+oryn create <project>
 ```
 
-For example, you may use `l create` command like so:
+For example, you may use `oryn create` command like so:
 
 ```bash
-l create desire
+oryn create blog
 ```
 
-It will create a new Lucifer project named desire in the `desire` directory.
+It will create a new Oryn project named blog in the `blog` directory.
 
 ### Run Project (With Hot Reload)
 
 To run your project, you may use the following command in the root project directory:
 
 ```bash
-l run
+oryn run
 ```
 
 ### Build Executable 
@@ -41,55 +41,55 @@ l run
 To compile your app and build an executable, you may use:
 
 ```bash
-l build
+oryn build
 ```
 
 It will generate the executable file, ready to be sent to production server, in your root project directory.
 
 ### Generate Controller
 
-To generate a controller in your Lucifer project, you may use:
+To generate a controller in your Oryn project, you may use:
 
 ```bash
-l c <controller>
+oryn c <controller>
 ```
 
-For example, you may use `l c` command like so:
+For example, you may use `oryn c` command like so:
 
 ```bash
-l c user
+oryn c user
 ```
 
 It will create a `user_controller.dart` file with class `UserController` in the `lib/controller` directory.
 
 ### Generate Repository
 
-To generate a repository in your Lucifer project, you may use:
+To generate a repository in your Oryn project, you may use:
 
 ```bash
-l r <repository>
+oryn r <repository>
 ```
 
-For example, you may use `l r` command like so:
+For example, you may use `oryn r` command like so:
 
 ```bash
-l r user
+oryn r user
 ```
 
 It will create a `user_repository.dart` file with class `UserRepository` in the `lib/repository` directory.
 
 ### Create Custom Middleware 
 
-You may use the following command to generate a new custom middleware for your Lucifer project:
+You may use the following command to generate a new custom middleware for your Oryn project:
 
 ```bash
-l m <middleware>
+oryn m <middleware>
 ```
 
-For example, you may use `l m` command like so:
+For example, you may use `oryn m` command like so:
 
 ```bash
-l m auth
+oryn m auth
 ```
 
 It will create a `auth.dart` file containing an `auth` function to define your custom middleware in the `lib/middleware` directory.

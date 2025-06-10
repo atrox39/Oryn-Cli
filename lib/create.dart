@@ -29,15 +29,15 @@ FutureOr create(List<String> args) async {
   if (pubspec.existsSync()) {
     pubspec.writeAsStringSync('''
 name: $project
-description: A simple lucifer application.
+description: A simple Oryn application.
 version: 1.0.0
 publish_to: none
 
 environment:
-  sdk: '>=2.14.0 <3.0.0'
+  sdk: '>=2.14.0 <4.0.0'
 
 dependencies:
-  lucifer: ^$version
+  oryn: ^$version
 
 dev_dependencies:
   lints: ^1.0.0''');
@@ -72,7 +72,7 @@ PORT = 3000''');
 
   main.createSync();
   main.writeAsStringSync('''
-import 'package:lucifer/lucifer.dart';
+import 'package:oryn/oryn.dart';
 
 void main() async {
   final app = App();
@@ -82,7 +82,7 @@ void main() async {
   app.use(static('public'));
 
   app.get('/', (Req req, Res res) async {
-    await res.send('Hello Detective');
+    await res.send('Hello from Oryn');
   });
 
   await app.listen(port);
@@ -124,5 +124,5 @@ void main() {
   );
   print('');
   print('    cd $project');
-  print('    l run');
+  print('    oryn run');
 }

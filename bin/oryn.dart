@@ -1,8 +1,9 @@
-import 'package:lucy/lucy.dart';
+import 'package:oryn_cli/oryn.dart';
 
 main(List<String> args) async {
   print('');
-  print('Lucifer $version');
+  print('Oryn-Cli $lversion');
+  print('Oryn $version');
   print('');
 
   if (args.isNotEmpty) {
@@ -29,12 +30,12 @@ main(List<String> args) async {
 void _error() {
   print('Please use a correct command, such as:');
   print('');
-  print('    lucy run');
+  print('    oryn run');
   print('');
-  print('    lucy create <project>');
+  print('    oryn create <project>');
   print('');
-  print('    lucy c <controller>');
+  print('    oryn c <controller>');
   print('');
-  print('    lucy r <repository>');
+  print('    oryn r <repository>');
   print('');
 }

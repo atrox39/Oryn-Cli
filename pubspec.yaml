@@ -1,11 +1,11 @@
-name: lucy
-description: Command Line Interface (CLI) for Lucifer (a fast, light-weight web framework in dart)
-version: 1.1.5
-homepage: https://github.com/salkuadrat/lucy
-repo: https://github.com/salkuadrat/lucy
+name: oryn_cli
+description: Command Line Interface (CLI) for Oryn (a fast, light-weight web framework in dart)
+version: 1.0.0
+homepage: https://github.com/atrox39/Oryn-Cli
+repo: https://github.com/atrox39/Oryn-Cli
 
 environment:
-  sdk: '>=2.14.0 <3.0.0'
+  sdk: '>=2.14.0 <4.0.0'
 
 dependencies:
   watcher: ^1.0.0
@@ -15,5 +15,4 @@ dev_dependencies:
   lints: ^1.0.0
 
 executables:
-  lucy:
-  l:
+  oryn:

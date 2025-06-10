@@ -39,7 +39,7 @@ FutureOr _createController(String name, String directory) async {
     file.writeAsStringSync('''
 import 'dart:async';
 
-import 'package:lucifer/lucifer.dart';
+import 'package:oryn/oryn.dart';
 
 class $className extends Controller {
   $className(App app) : super(app);

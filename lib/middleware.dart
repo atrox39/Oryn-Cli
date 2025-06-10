@@ -33,7 +33,7 @@ FutureOr _createMiddleware(String name, String directory) async {
   if (!file.existsSync()) {
     file.createSync();
     file.writeAsStringSync('''
-import 'package:lucifer/lucifer.dart';
+import 'package:oryn/oryn.dart';
 
 Callback $name() {
   return (Req req, Res res) async {

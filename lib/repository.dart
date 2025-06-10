@@ -37,7 +37,7 @@ FutureOr _createRepository(String name, String directory) async {
   if (!file.existsSync()) {
     file.createSync();
     file.writeAsStringSync('''
-import 'package:lucifer/lucifer.dart';
+import 'package:oryn/oryn.dart';
 
 class $className extends Repository {
   $className(App app) : super(app);
