@@ -1,6 +1,6 @@
 name: oryn_cli
 description: Command Line Interface (CLI) for Oryn (a fast, light-weight web framework in dart)
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/atrox39/Oryn-Cli
 repo: https://github.com/atrox39/Oryn-Cli
 
