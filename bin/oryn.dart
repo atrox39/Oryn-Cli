@@ -1,6 +1,8 @@
 import 'package:oryn_cli/oryn.dart';
 
 main(List<String> args) async {
+  String version = await OrynVersion().version;
+  String lversion = await OrynVersion().cliVersion;
   print('');
   print('Oryn-Cli $lversion');
   print('Oryn $version');

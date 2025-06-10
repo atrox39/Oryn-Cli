@@ -6,6 +6,8 @@ import 'package:path/path.dart';
 import 'version.dart';
 
 FutureOr create(List<String> args) async {
+  String version = await OrynVersion().version;
+  String separator = Platform.isWindows ? '\\' : '/';
   String project = args[1];
 
   print('Creating $project...');

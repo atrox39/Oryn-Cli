@@ -14,7 +14,7 @@ pub global activate oryn_cli
 
 ### Create New Project
 
-To create a new Oryn project, you may use the following Oryn command.
+To create a new Lucifer project, you may use the following Oryn command.
 
 ```bash
 oryn create <project>
@@ -26,7 +26,7 @@ For example, you may use `oryn create` command like so:
 oryn create blog
 ```
 
-It will create a new Oryn project named blog in the `blog` directory.
+It will create a new Lucifer project named blog in the `blog` directory.
 
 ### Run Project (With Hot Reload)
 
@@ -64,7 +64,7 @@ It will create a `user_controller.dart` file with class `UserController` in the 
 
 ### Generate Repository
 
-To generate a repository in your Oryn project, you may use:
+To generate a repository in your Lucifer project, you may use:
 
 ```bash
 oryn r <repository>
@@ -80,7 +80,7 @@ It will create a `user_repository.dart` file with class `UserRepository` in the 
 
 ### Create Custom Middleware 
 
-You may use the following command to generate a new custom middleware for your Oryn project:
+You may use the following command to generate a new custom middleware for your Lucifer project:
 
 ```bash
 oryn m <middleware>
